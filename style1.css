@@ -1,0 +1,24 @@
+body{
+background:linear-gradient(90deg, #bda8e2, #b8e3c1, #f3e7aa);
+}
+h1{
+font-family: 'aloja.woff';
+ src:url('aloja.woff.otf') format('woff');
+ background: #87a9c9;
+ color: #fff;
+}
+h2{
+ font-size: 30px; 
+font-family:'Arial Rounded MT Bold', sans-serif;
+color: #566947;
+}
+h3{
+font-family:'Arial Rounded MT Bold', sans-serif; 
+color: #566947;
+}
+ul{
+font-size: 25px;
+font-family:'Arial Rounded MT Bold', sans-serif; 
+color: #566947;
+font: weight 800px;
+}

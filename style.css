@@ -1,0 +1,247 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #333;
+  scroll-behavior: smooth;
+  font-family: 'Livvic', sans-serif; /* fonte principal do corpo de texto */
+}
+
+/* === Fontes personalizadas === */
+@font-face {
+  font-family: 'Aloja';
+  src: url('aloja.woff.otf') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Schoobel';
+  src: url('fonts/Schoobel.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Livvic';
+  src: url('fonts/Livvic-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* === Seção 1 - Hero === */
+.hero {
+  height: 100vh;
+  background: url('imagem\ de\ fundo.jpg') center/cover no-repeat;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+
+nav {
+  width: 100%;
+  padding: 20px;
+  background: rgba(0,0,0,0.2);
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 40px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.hero-content {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+   font-family: 'aloja';
+  src: url('aloja.woff.otf') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+.hero-content h1 span {
+  font-size: 4rem;
+  display: block;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+/* === Seção 2 - Intro === */
+.intro {
+  min-height: 100vh;
+  background-image: linear-gradient(90deg, #8ed4f1, #b8e3c1, #f3e7aa);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  text-align: center;
+  font-family: 'aloja';
+  src: url('aloja.woff.otf') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+.intro-left h2 {
+  color: #fff;
+  font-size: 2.5rem;
+}
+
+.intro-left h2 span {
+  font-size: 3rem;
+  display: block;
+}
+
+.intro-right {
+  max-width: 700px;
+  margin-top: 30px;
+}
+
+.intro-right p {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  font-weight: 600;
+}
+
+.intro-bottom {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  font-weight: 500;
+  margin-top: 40px;
+  max-width: 800px;
+}
+
+/* === Seção 3 - Cards === */
+.cards {
+  min-height: 100vh;
+  background: linear-gradient(90deg, #8ed4f1, #b8e3c1, #f3e7aa);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 60px 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #f9f9f9;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 600px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card-title {
+  background: #87a9c9;
+  padding: 10px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #fff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.card-title > a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.card img {
+  width: 100%;
+  display: block;
+}
+
+/* === Footer === */
+footer {
+  background: #87a9c9;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-size: 1.5rem;
+}
+
+footer span {
+  font-weight: bold;
+}
+.moca{
+    object-fit: cover;
+}
+.texto1{
+ font-size: 4rem;
+  font-weight: bold;
+   font-family: 'livvic.medium';
+  src: url('livvic.medium.ttf') format('ttf');
+  font-weight: 600;
+  font-style: normal;
+  color: #566947;
+}   
+.texto2{
+    font-size: 2rem;
+  font-weight: bold;
+   font-family: 'livvic.medium';
+  src: url('livvic.medium.ttf') format('ttf');
+  font-weight: 600;
+  font-style: normal; 
+  color: #566947;
+}
+
+ /* === SOBRE NÓS === */
+  #sobre-nos {
+    background-color: #f0f4f8;
+    padding: 60px 20px;
+    text-align: center;
+    display: none; /* Oculta por padrão */
+    animation: fadeIn 0.6s ease-in-out;
+  }
+  
+  #sobre-nos.active {
+    display: block;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  #sobre-nos h2 {
+    font-family: 'Aloja';
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    color: #5766b8;
+  }
+  
+  #sobre-nos p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #5766b8;
+  }
+  
+  #sobre-nos ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #sobre-nos ul li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #566947;
+  }

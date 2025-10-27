@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Viva o Hobby</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Seção 1 - Hero -->
+  <header class="hero">
+    <nav>
+      <ul>
+        <li><a href="#">Início</a></li>
+        <li><a href="#" onclick="mostrarSobreNos()">Sobre Nós</a></li>
+        <li><a href="inscreva.html">Inscreva-se</a></li>  
+      </ul>
+    </nav>
+    <div class="hero-content">
+      <h1>VIVA O <span>HOBBY</span></h1>
+      <p>SE VOCÊ É APAIXONADO POR ANIMES, ARTE, DESENHO OU TUDO ISSO JUNTO, CHEGOU AO LUGAR CERTO!</p>
+    </div>
+  </header>
+
+  <!-- Seção 2 - Texto explicativo -->
+  <section class="intro">
+    <div class="intro-left">
+      <h2>VIVA O <span>HOBBY</span></h2>
+    </div>
+    <div class="intro-right">
+      <p class="texto1">
+        AQUI, O HOBBY VAI ALÉM DO PASSATEMPO: É UMA FORMA DE EXPRESSÃO, CONEXÃO E CRIATIVIDADE.
+        DOS TRAÇOS DE UM PERSONAGEM DE ANIME ÀS PINCELADAS DE UMA ILUSTRAÇÃO CHEIA DE EMOÇÃO,
+        ESTE ESPAÇO É FEITO PARA QUEM VIVE INTENSAMENTE CADA DETALHE DO QUE AMA.
+      </p>
+    </div>
+    <div class="intro-bottom">
+    <p class="texto2">    
+      VAMOS FALAR SOBRE TÉCNICAS DE DESENHO, ESTILOS ARTÍSTICOS, RECOMENDAÇÕES DE ANIMES,
+      INSPIRAÇÕES VISUAIS, CULTURA POP JAPONESA E TUDO O QUE FAZ O MUNDO CRIATIVO GIRAR.
+    </p>
+    </div>
+  </section>
+
+  <!-- Seção 3 - Cards Animes/Artes -->
+  <section class="cards">
+    <div class="card">
+      <div class="card-title"> <a href="animes.html"> Sobre Animes </div>
+      <img src="imagens.jpg" alt="Sobre Animes">
+      </a>
+    </div>
+    <div class="card">
+      <div class="card-title"> <a href="artes.html"> Sobre Artes </a></div>
+      <img class="moca" src="images.webp" alt="Sobre Artes" height="500px">
+    </div>
+  </section>
+  <script src="inscreva.js"></script>
+  <footer>
+    <p>VIVA O <span>HOBBY</span></p>
+  </footer>
+ <!-- Seção 4 - Sobre Nós -->
+  <section id="sobre-nos" style="display: none;">
+    <h2>Sobre os Criadores</h2>
+    <p>Somos uma dupla apaixonada  por arte, animes e criatividade digital.</p>
+    <ul>
+      <li>Bruna - desenhista</li>
+      <li>kemylly -  fã de animes</li>
+    </ul>
+  </section>
+  <script>
+    // Função para mostrar/ocultar a seção "Sobre Nós"
+    function mostrarSobreNos() {
+      const secaoSobreNos = document.getElementById("sobre-nos");
+
+      // Verifica se a seção está visível ou não
+      if (secaoSobreNos.style.display === "none") {
+        // Se estiver oculta, mostramos a seção
+        secaoSobreNos.style.display = "block";
+        // Faz o navegador rolar suavemente até a seção
+        secaoSobreNos.scrollIntoView({ behavior: "smooth" });
+      } else {
+        // Caso contrário, escondemos a seção
+        secaoSobreNos.style.display = "none";
+      }
+    }
+    </script>
+</body>
+</html>

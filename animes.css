@@ -1,0 +1,35 @@
+body{
+  background:linear-gradient(90deg, #8ed4f1, #b8e3c1, #f3e7aa) ;
+}
+h1{
+  font-size: 30px;
+  font-family: 'aloja.woff';
+  src: url('aloja.woff.otf') format('woff');
+  background: #739cb7;
+  color: #eceada;
+}    
+h2{
+  font-size: 25px;
+  color: #566947;
+}
+li{
+  font-size: 25px;
+  color: #566947;
+}
+.imagens{
+  font-size: 100px;
+  position: absolute;
+  top: 80px;
+  left: 20px;
+  width: 200px;
+  border-radius: 10px;
+}
+.video{
+ position: relative;
+ top: 200px;
+ left: 2%;
+ transform: translate(-50%, -50%);
+ width: 500px;
+ border-radius: 10px;
+}
+

@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Livvic', sans-serif;
+    color: #5874c2;
+    scroll-behavior: smooth;
+    background-color: #fdfdfd;
+  }
+  
+  /* === Fontes personalizadas === */
+  @font-face {
+    font-family: 'Aloja';
+    src: url('aloja.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Livvic';
+    src: url('fonts/Livvic-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  /* === Hero Section === */
+  .hero {
+    height: 100vh;
+    background: url('imagem-de-fundo.jpg') center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  nav {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 20px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  nav ul li a:hover {
+    color: #ffeb3b;
+  }
+  
+  .hero-content {
+    text-align: center;
+    color: white;
+    margin-bottom: 50px;
+  }
+  
+  .hero-content h1 {
+    font-family: 'Aloja';
+    font-size: 3.5rem;
+  }
+  
+  .hero-content h1 span {
+    font-size: 4rem;
+    display: block;
+  }
+  
+  .hero-content p {
+    font-size: 1.3rem;
+    margin-top: 20px;
+  }
+  
+  /* === Intro Section === */
+  .intro {
+    background-image: linear-gradient(90deg, #8ed4f1, #b8e3c1, #f3e7aa);
+    padding: 60px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .intro-left h2 {
+    font-family: 'Aloja';
+    font-size: 3rem;
+    color: #fff;
+  }
+  
+  .intro-left h2 span {
+    font-size: 3.5rem;
+    display: block;
+  }
+  
+  .intro-right,
+  .intro-bottom {
+    max-width: 800px;
+    margin-top: 30px;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    font-weight: 600;
+    color: #566947;
+  }
+  
+  .texto1 {
+    font-size: 2rem;
+  }
+  
+  .texto2 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+  }
+  
+  /* === Cards === */
+  .cards {
+    background: linear-gradient(90deg, #8ed4f1, #b8e3c1, #f3e7aa);
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  
+  .card {
+    background: #fff;
+    border-radius: 10px;
+    width: 500px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.03);
+  }
+  
+  .card-title {
+    background: #87a9c9;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: 15px;
+  }
+  
+  .card-title a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .moca {
+    object-fit: cover;
+  }
+  
+  /* === SOBRE NÓS === */
+  #sobre-nos {
+    background-color: #f0f4f8;
+    padding: 60px 20px;
+    text-align: center;
+    display: none; /* Oculta por padrão */
+    animation: fadeIn 0.6s ease-in-out;
+  }
+  
+  #sobre-nos.active {
+    display: block;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  #sobre-nos h2 {
+    font-family: 'Aloja';
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    color: #5766b8;
+  }
+  
+  #sobre-nos p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #5766b8;
+  }
+  
+  #sobre-nos ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #sobre-nos ul li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #566947;
+  }
+  
+  /* === Footer === */
+  footer {
+    background-color: #87a9c9;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.4rem;
+  }
+  
+  footer span {
+    font-weight: bold;
+  }
+  
+  /* === Fade Animation === */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* === Responsivo === */
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .hero-content h1 {
+      font-size: 2.5rem;
+    }
+  
+    .hero-content h1 span {
+      font-size: 3rem;
+    }
+  
+    .card {
+      width: 100%;
+    }
+  
+    .intro-left h2,
+    .intro-left h2 span {
+      font-size: 2rem;
+    }
+  
+    .texto1, .texto2 {
+      font-size: 1.2rem;
+    }
+  }
